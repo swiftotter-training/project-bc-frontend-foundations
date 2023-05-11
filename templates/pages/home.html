@@ -26,6 +26,11 @@ blog:
     {{/each}}
 
 <div class="main full">
+    <div class="homeAuxContent">
+        {{> components/brand/shop-by-brand}}
+        {{> components/blog/recent}}
+    </div>
+
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
     {{/if}}
