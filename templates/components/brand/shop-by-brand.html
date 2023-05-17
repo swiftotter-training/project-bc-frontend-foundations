@@ -1,3 +1,8 @@
 <div class="content-item">
-    Hello world from a brand template!
+    <h2><a href="{{urls.brand}}">Shop by Brand</a></h2>
+    <ul>
+    {{#each shop_by_brand}}
+        <li class="shopByBrand-brand"><a href="{{url}}">{{name}}</a></li>
+    {{/each}}
+    </ul>
 </div>
