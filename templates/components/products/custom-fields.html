@@ -1,4 +1,7 @@
 {{#each product.custom_fields}}
-<dt class="productView-info-name">{{name}}:</dt>
-<dd class="productView-info-value">{{{value}}}</dd>
+    {{! Ignore any custom fields whose names start with "VAR:" }}
+    {{#unless (first name 4) "===" "VAR:"}}
+        <dt class="productView-info-name">{{name}}:</dt>
+        <dd class="productView-info-value">{{{value}}}</dd>
+    {{/unless}}
 {{/each}}
