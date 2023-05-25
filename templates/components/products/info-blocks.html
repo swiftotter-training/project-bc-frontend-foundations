@@ -2,20 +2,7 @@
     <div class="productInfoBlocks">
         {{#each (split value ",")}}
             {{assignVar "trimmedValue" (trim this)}}
-
-            <div class="productInfoBlock">
-                {{#eq (getVar "trimmedValue") "certificate"}}
-                    {{> components/products/info-blocks/certificate}}
-                {{/eq}}
-
-                {{#eq (getVar "trimmedValue") "warranty"}}
-                    {{> components/products/info-blocks/warranty}}
-                {{/eq}}
-
-                {{#eq (getVar "trimmedValue") "repairs"}}
-                    {{> components/products/info-blocks/repairs}}
-                {{/eq}}
-            </div>
+            {{> components/products/info-block partial=(getVar "trimmedValue")}}
         {{/each}}
     </div>
 {{/filter}}
