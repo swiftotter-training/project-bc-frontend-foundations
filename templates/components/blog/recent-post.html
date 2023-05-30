@@ -22,8 +22,10 @@
         </header>
 
         <div class="blog-post">
-            {{{truncate post.summary 15}}}
-            &hellip; <a href="{{url}}" aria-label="{{post.title}} {{lang 'blog.read_more'}}">{{lang 'blog.read_more'}}</a>
+            {{{post.summary}}}
+            {{#if post.show_read_more}}
+                &hellip; <a href="{{url}}" aria-label="{{post.title}} {{lang 'blog.read_more'}}">{{lang 'blog.read_more'}}</a>
+            {{/if}}
         </div>
 
         {{>components/common/share url=post.url}}
