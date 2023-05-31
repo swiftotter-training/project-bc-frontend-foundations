@@ -1,0 +1,18 @@
+{{#if category.products}}
+    <h2>Showcase Products</h2>
+    <ul class="productGrid showcaseProductListing">
+        {{#each category.products}}
+            <li class="product">
+                {{>components/products/showcase-card 
+                    settings=../settings 
+                    show_compare=../show_compare 
+                    show_rating=../settings.show_product_rating 
+                    theme_settings=../theme_settings 
+                    customer=../customer 
+                    event="list" 
+                    position=(add @index 1)
+                }}
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}

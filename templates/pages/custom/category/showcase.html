@@ -1,0 +1,32 @@
+---
+category:
+    shop_by_price: false
+    products:
+        limit: 4
+---
+
+{{#partial "section-logo"}}
+    Hello world from a category page!
+{{/partial}}
+
+{{#partial "page"}}
+
+    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+    {{#unless theme_settings.hide_category_page_heading }}
+        <h1 class="page-heading">{{category.name}}</h1>
+        {{{region name="category_below_header"}}}
+    {{/unless}}
+    {{{category.description}}}
+    <div class="page">
+        <div class="page-content" id="subcategory-listing-container">
+            {{> components/category/subcategory-listing}}
+        </div>        
+
+        <div class="page-content" id="product-listing-container">
+            {{> components/category/showcase-product-listing }}
+            {{{region name="category_below_content"}}}
+        </div>
+    </div>
+
+{{/partial}}
+{{> layout/base}}

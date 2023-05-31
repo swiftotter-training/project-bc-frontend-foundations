@@ -1,0 +1,25 @@
+{{#if category.subcategories}}
+    <h2>Subcategories</h2>
+    <ul class="showcaseSubcategoryListing">
+        {{#each category.subcategories}}
+            <li>
+                <article class="card">
+                    <figure class="card-figure" style="display:none">
+                        <a href="{{url}}"
+                           class="card-figure__link"
+                        >
+                            <div class="card-img-container">
+                                {{! TODO subcategory image}}
+                            </div>
+                        </a>
+                    </figure>
+                </article>
+                <div class="card-body">
+                    <h3 class="card-title">
+                        <a href="{{url}}">{{name}}</a>
+                    </h3>
+                </div>
+            </li>
+        {{/each}}
+    </ul>
+{{/if}}
