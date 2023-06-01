@@ -33,6 +33,7 @@ customer:
         {{> components/brand/shop-by-brand}}
         {{> components/blog/recent}}
     </div>
+    {{{region name="home_below_brands_and_blog"}}}
 
     {{#if products.featured}}
         {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}
@@ -55,6 +56,7 @@ customer:
             products=customer.recently_viewed_products.items
         }}
     {{/if}}
+    {{{region name="home_below_recently_viewed"}}}
 </div>
 {{/partial}}
 {{> layout/base}}
