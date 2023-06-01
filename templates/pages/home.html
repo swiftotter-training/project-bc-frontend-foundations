@@ -50,7 +50,7 @@ customer:
     {{{region name="home_below_new_products"}}}
 
     {{#if customer.recently_viewed_products}}
-        <h2 class="page-heading">Recently Viewed</h2>
+        <h2 class="page-heading">{{lang "account.nav.recently_viewed"}}</h2>
         {{> components/products/grid
             products=customer.recently_viewed_products.items
         }}

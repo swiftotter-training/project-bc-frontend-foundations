@@ -19,7 +19,8 @@
         "recent_posts": "Recent Posts",
         "label": "Blog",
         "posted_by": "Posted by {name}",
-        "read_more": "read more"
+        "read_more": "read more",
+        "latest": "The Latest from {blog_name}"
     },
     "unavailable": {
         "hibernation_title": "We'll be back",
@@ -28,7 +29,8 @@
         "maintenance_message": "This store is currently unavailable due to maintenance. It should be available again shortly. We apologize for any inconvenience caused."
     },
     "brands": {
-        "no_products": "There are no products listed under this brand."
+        "no_products": "There are no products listed under this brand.",
+        "shop_by": "Shop By Brand"
     },
     "categories": {
         "no_products": "There are no products listed under this category."
@@ -807,7 +809,18 @@
             "price": "and get {discount} off",
             "fixed": "and pay only {discount} each"
         },
-        "card_default_image_alt": "Image coming soon"
+        "card_default_image_alt": "Image coming soon",
+        "showcase": {
+            "label": "Showcase Products"
+        },
+        "info": {
+            "certificate": "This product comes with a certificate of authenticity, marking it as a real SwiftOtter original!",
+            "certificate_heading": "Certificate Included",
+            "repairs": "This product is eligible for free service from our repair center. Contact us to describe your issue, and we will arrange the appropriate repairs free of charge.",
+            "repairs_heading": "Eligible for Repairs",
+            "warranty": "This product should last a lifetime. If it is damaged or destroyed, no matter how long it's been since your purchase, we will replace it.",
+            "warranty_heading": "Lifetime Warranty"
+        }
     },
     "invoice": {
         "for_order": "{name} Invoice for Order #{id}",
