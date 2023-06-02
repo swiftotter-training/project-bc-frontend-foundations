@@ -1876,6 +1876,62 @@
             "label": "i18n.SpecifyDimensions"
           }
         ]
+      },
+
+      {
+        "type": "heading",
+        "content": "i18n.ProductInfoBlocks"
+      },
+      {
+        "type": "checkbox",
+        "label": "i18n.ShowProductInfoBlocks",
+        "id": "productInfoBlock-show"
+      },
+      {
+        "type": "color",
+        "label": "i18n.ProductInfoBlockBackgroundColor",
+        "id": "productInfoBlock-backgroundColor",
+        "reference": "productInfoBlock-show",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.ProductInfoBlockBorderColor",
+        "id": "productInfoBlock-borderColor",
+        "reference": "productInfoBlock-show",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.ProductInfoBlockIconColor",
+        "id": "productInfoBlock-iconColor",
+        "reference": "productInfoBlock-show",
+        "reference_default": false
+      },
+      {
+        "type": "select",
+        "label": "i18n.ProductInfoBlockHeadingFontSize",
+        "id": "productInfoBlock-heading-fontSize",
+        "options": [
+          {
+            "value": 20,
+            "label": "20px"
+          },
+          {
+            "value": 24,
+            "label": "24px"
+          },
+          {
+            "value": 28,
+            "label": "28px"
+          },
+          {
+            "value": 32,
+            "label": "32px"
+          }
+        ],
+        "reference": "productInfoBlock-show",
+        "reference_default": false
       }
     ]
   },
@@ -3369,6 +3425,91 @@
             "label": "i18n.none"
           }
         ]
+      }
+    ]
+  },
+  {
+    "name": "i18n.Categories",
+    "settings": [
+      {
+        "type": "heading",
+        "content": "i18n.CatShowcase"
+      },
+      {
+        "type": "checkbox",
+        "label": "i18n.CatShowcaseShowSubcats",
+        "id": "catShowcase-showSubcategories"
+      },
+      {
+        "type": "checkbox",
+        "label": "i18n.CatShowcaseShowProducts",
+        "id": "catShowcase-showProducts"
+      },
+      {
+        "type": "heading",
+        "content": "i18n.CatShowcaseCards",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "checkbox",
+        "label": "i18n.CatShowcaseCardsAllowHover",
+        "id": "catShowcase-allowProductHover",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "select",
+        "label": "i18n.CatShowcaseCardsHoverDelay",
+        "id": "catShowcase-productHoverDelay",
+        "options": [
+          {
+            "value": 100,
+            "label": "100ms"
+          },
+          {
+            "value": 250,
+            "label": "250ms"
+          },
+          {
+            "value": 500,
+            "label": "500ms"
+          },
+          {
+            "value": 750,
+            "label": "750ms"
+          }
+        ],
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.CatShowcaseCardsBackgroundColor",
+        "id": "catShowcase-backgroundColor",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.CatShowcaseCardsBorderColor",
+        "id": "catShowcase-borderColor",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.CatShowcaseCardsIconInactiveColor",
+        "id": "catShowcase-iconInactiveColor",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
+      },
+      {
+        "type": "color",
+        "label": "i18n.CatShowcaseCardsIconActiveColor",
+        "id": "catShowcase-iconActiveColor",
+        "reference": "catShowcase-showProducts",
+        "reference_default": false
       }
     ]
   }

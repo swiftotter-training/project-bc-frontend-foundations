@@ -5591,5 +5591,57 @@
     "da": "Masterpass",
     "no": "Masterpass",
     "ko": "Masterpass"
+  },
+
+  "i18n.ProductInfoBlocks": {
+    "default": "Product Info Blocks"
+  },
+  "i18n.ShowProductInfoBlocks": {
+    "default": "Show Product Info Blocks"
+  },
+  "i18n.ProductInfoBlockBackgroundColor": {
+    "default": "Background color"
+  },
+  "i18n.ProductInfoBlockBorderColor": {
+    "default": "Border color"
+  },
+  "i18n.ProductInfoBlockIconColor": {
+    "default": "Icon color"
+  },
+  "i18n.ProductInfoBlockHeadingFontSize": {
+    "default": "Heading font size"
+  },
+  "i18n.Categories": {
+    "default": "Categories"
+  },
+  "i18n.CatShowcase": {
+    "default": "Showcase View"
+  },
+  "i18n.CatShowcaseShowSubcats": {
+    "default": "Show subcategories"
+  },
+  "i18n.CatShowcaseShowProducts": {
+    "default": "Show products"
+  },
+  "i18n.CatShowcaseCards": {
+    "default": "Showcase View Enhanced Product Cards"
+  },
+  "i18n.CatShowcaseCardsAllowHover": {
+    "default": "Allow hover activation for products"
+  },
+  "i18n.CatShowcaseCardsHoverDelay": {
+    "default": "Hover delay"
+  },
+  "i18n.CatShowcaseCardsBackgroundColor": {
+    "default": "Background color"
+  },
+  "i18n.CatShowcaseCardsBorderColor": {
+    "default": "Border color"
+  },
+  "i18n.CatShowcaseCardsIconActiveColor": {
+    "default": "Icon active color"
+  },
+  "i18n.CatShowcaseCardsIconInactiveColor": {
+    "default": "Icon inactive color"
   }
 }
