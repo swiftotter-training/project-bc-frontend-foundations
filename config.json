@@ -356,7 +356,21 @@
     "afterpay-button-color": "black-mint",
     "amazon-button-color": "Gold",
     "masterpass-button-color": "black",
-    "paymentbuttons-provider-sorting": []
+    "paymentbuttons-provider-sorting": [],
+
+    "catShowcase-showSubcategories": true,
+    "catShowcase-showProducts": true,
+    "catShowcase-backgroundColor": "#E5E5E5",
+    "catShowcase-borderColor": "#757575",
+    "catShowcase-iconInactiveColor": "#757575",
+    "catShowcase-iconActiveColor": "#333333",
+    "catShowcase-allowProductHover": true,
+    "catShowcase-productHoverDelay": 250,
+    "productInfoBlock-show": true,
+    "productInfoBlock-backgroundColor": "#E5E5E5",
+    "productInfoBlock-borderColor": "#757575",
+    "productInfoBlock-iconColor": "#757575",
+    "productInfoBlock-heading-fontSize": 20
   },
   "read_only_files": [
     "/assets/scss/components/citadel",
@@ -396,6 +410,17 @@
       },
       "images": {},
       "settings": {}
+    },
+    {
+      "name": "Lightweight",
+      "id": "lightweight",
+      "meta": {
+        "description": "A stripped-down experience"
+      },
+      "settings": {
+        "catShowcase-showProducts": false,
+        "productInfoBlock-show": false
+      }
     }
   ]
 }

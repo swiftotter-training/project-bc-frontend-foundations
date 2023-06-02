@@ -18,16 +18,20 @@ category:
     {{/unless}}
     {{{category.description}}}
     <div class="page">
+        {{#if theme_settings.catShowcase-showSubcategories}}
         <div class="page-content" id="subcategory-listing-container">
             {{> components/category/subcategory-listing}}
             {{{region name="category_below_subcategories--global"}}}
             {{{region name="category_below_subcategories"}}}
         </div>        
+        {{/if}}
 
+        {{#if theme_settings.catShowcase-showProducts}}
         <div class="page-content" id="product-listing-container">
             {{> components/category/showcase-product-listing }}
             {{{region name="category_below_content"}}}
         </div>
+        {{/if}}
     </div>
 
 {{/partial}}

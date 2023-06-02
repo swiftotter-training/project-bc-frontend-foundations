@@ -1,6 +1,7 @@
 {{{region name="products_above_info_blocks--global"}}}
 {{{region name="products_above_info_blocks"}}}
 
+{{#if theme_settings.productInfoBlock-show}}
 {{#filter product.custom_fields "VAR:INFO" property="name"}}
     <div class="productInfoBlocks">
         {{#each (split value ",")}}
@@ -9,3 +10,4 @@
         {{/each}}
     </div>
 {{/filter}}
+{{/if}}
