@@ -1,0 +1,30 @@
+.recentBlog {
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    .blog {
+        padding: spacing("single") 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+        margin-bottom: spacing("single");
+
+        @include breakpoint("medium") {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .blog-post-figure, .blog-post-body {
+        width: 100%;
+    }
+
+    .blog-post-figure {
+        display: none;
+
+        @include breakpoint("medium") {
+            display: block;
+        }
+    }
+}

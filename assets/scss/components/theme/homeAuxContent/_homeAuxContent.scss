@@ -1,0 +1,13 @@
+.homeAuxContent {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+    background-color: color("primary", "dark");
+    margin-bottom: spacing("double");
+
+    .content-item {
+        background-color: #fff;
+        padding: spacing("single");
+    }
+}

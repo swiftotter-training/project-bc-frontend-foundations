@@ -421,6 +421,18 @@
         "catShowcase-showProducts": false,
         "productInfoBlock-show": false
       }
+    },
+    {
+      "name": "Bold and Bright",
+      "id": "bold-bright",
+      "meta": {
+        "description": "A big and colorful take on our theme"
+      },
+      "settings": {
+        "productInfoBlock-backgroundColor": "#A4A4F3",
+        "productInfoBlock-borderColor": "#7777B5",
+        "productInfoBlock-heading-fontSize": 24
+      }
     }
   ]
 }
