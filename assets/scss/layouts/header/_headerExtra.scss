@@ -1,0 +1,16 @@
+.header-logo {
+    display: flex;
+
+    .section-logo {
+        display: none;
+        margin-left: spacing("double");
+
+        img {
+            max-height: 100px
+        }
+
+        @include breakpoint("medium") {
+            display: block;
+        }
+    }
+}
