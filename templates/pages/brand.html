@@ -14,20 +14,13 @@ brand:
 {{/partial}}
 
 {{#partial "section-logo"}}
-    Hello world from a brand page!
+    {{#if brand.image}}
+    <img src="{{getImage brand.image 'section_logo_size'}}" alt="{{brand.image.alt}}" />
+    {{/if}}
 {{/partial}}
 
 {{#partial "page"}}
 {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
-{{#if brand.image}}
-    <div class="brand-image-container">
-        {{> components/common/responsive-img
-            image=brand.image
-            fallback_size=theme_settings.thumb_size
-            lazyload='disabled'
-        }}
-    </div>
-{{/if}}
 <h1 class="page-heading">{{brand.name}}</h1>
 {{{region name="brand_below_header"}}}
 <div class="page">

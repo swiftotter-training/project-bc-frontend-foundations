@@ -6,7 +6,9 @@ category:
 ---
 
 {{#partial "section-logo"}}
-    Hello world from a category page!
+    {{#if category.image}}
+    <img src="{{getImage category.image 'section_logo_size'}}" alt="{{category.image.alt}}" />
+    {{/if}}
 {{/partial}}
 
 {{#partial "page"}}

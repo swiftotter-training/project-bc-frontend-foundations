@@ -5593,6 +5593,9 @@
     "ko": "Masterpass"
   },
 
+  "i18n.SectionLogoImageSize": {
+    "default": "Section logo image size"
+  },
   "i18n.ProductInfoBlocks": {
     "default": "Product Info Blocks"
   },

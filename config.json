@@ -358,6 +358,7 @@
     "masterpass-button-color": "black",
     "paymentbuttons-provider-sorting": [],
 
+    "section_logo_size": "300x100",
     "catShowcase-showSubcategories": true,
     "catShowcase-showProducts": true,
     "catShowcase-backgroundColor": "#E5E5E5",
