@@ -22,10 +22,14 @@
     border-style: solid;
     border-color: $productInfoBlock-borderColor;
     border-width: 0 2px 2px 0;
+    font-family: $productInfoBlock-font;
+    font-weight: $productInfoBlock-fontWeight;
     font-size: fontSize("smaller");
     margin-bottom: spacing("single");
 
     h3 {
+        font-family: inherit;
+        font-weight: inherit;
         font-size: $productInfoBlock-heading-fontSize;
         margin: 0 0 spacing("base") 0;
     }

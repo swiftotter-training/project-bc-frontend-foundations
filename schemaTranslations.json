@@ -5593,6 +5593,9 @@
     "ko": "Masterpass"
   },
 
+  "i18n.Anton": {
+    "default": "Anton"
+  },
   "i18n.SectionLogoImageSize": {
     "default": "Section logo image size"
   },
@@ -5611,6 +5614,9 @@
   "i18n.ProductInfoBlockIconColor": {
     "default": "Icon color"
   },
+  "i18n.ProductInfoBlockFont": {
+    "default": "Font"
+  },
   "i18n.ProductInfoBlockHeadingFontSize": {
     "default": "Heading font size"
   },
@@ -5628,6 +5634,9 @@
   },
   "i18n.CatShowcaseSubcatSize": {
     "default": "Subcategory image size"
+  },
+  "i18n.CatShowcaseFont": {
+    "default": "Font"
   },
   "i18n.CatShowcaseCards": {
     "default": "Showcase View Enhanced Product Cards"

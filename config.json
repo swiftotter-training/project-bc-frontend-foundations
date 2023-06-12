@@ -362,6 +362,7 @@
     "catShowcase-showSubcategories": true,
     "catShowcase-showProducts": true,
     "catShowcase-subcategoryImgSize": "600x600",
+    "catShowcase-font": "Google_Anton_400",
     "catShowcase-backgroundColor": "#E5E5E5",
     "catShowcase-borderColor": "#757575",
     "catShowcase-iconInactiveColor": "#757575",
@@ -372,6 +373,7 @@
     "productInfoBlock-backgroundColor": "#E5E5E5",
     "productInfoBlock-borderColor": "#757575",
     "productInfoBlock-iconColor": "#757575",
+    "productInfoBlock-font": "Google_Anton_400",
     "productInfoBlock-heading-fontSize": 20
   },
   "read_only_files": [
