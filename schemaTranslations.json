@@ -5626,6 +5626,9 @@
   "i18n.CatShowcaseShowProducts": {
     "default": "Show products"
   },
+  "i18n.CatShowcaseSubcatSize": {
+    "default": "Subcategory image size"
+  },
   "i18n.CatShowcaseCards": {
     "default": "Showcase View Enhanced Product Cards"
   },

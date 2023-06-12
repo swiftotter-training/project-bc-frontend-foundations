@@ -361,6 +361,7 @@
     "section_logo_size": "300x100",
     "catShowcase-showSubcategories": true,
     "catShowcase-showProducts": true,
+    "catShowcase-subcategoryImgSize": "600x600",
     "catShowcase-backgroundColor": "#E5E5E5",
     "catShowcase-borderColor": "#757575",
     "catShowcase-iconInactiveColor": "#757575",

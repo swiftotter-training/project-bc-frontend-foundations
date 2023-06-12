@@ -3467,6 +3467,22 @@
         "id": "catShowcase-showProducts"
       },
       {
+        "type": "imageDimension",
+        "label": "i18n.CatShowcaseSubcatSize",
+        "id": "catShowcase-subcategoryImgSize",
+        "force_reload": true,
+        "options": [
+          {
+            "value": "600x600",
+            "label": "i18n.OptimizedForTheme"
+          },
+          {
+            "value": "custom",
+            "label": "i18n.SpecifyDimensions"
+          }
+        ]
+      },
+      {
         "type": "heading",
         "content": "i18n.CatShowcaseCards",
         "reference": "catShowcase-showProducts",

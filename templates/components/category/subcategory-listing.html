@@ -4,12 +4,18 @@
         {{#each category.subcategories}}
             <li>
                 <article class="card">
-                    <figure class="card-figure" style="display:none">
+                    <figure class="card-figure">
                         <a href="{{url}}"
                            class="card-figure__link"
                         >
                             <div class="card-img-container">
-                                {{! TODO subcategory image}}
+                                {{> components/common/responsive-img
+                                    image=image
+                                    class="card-image"
+                                    fallback_size=theme_settings.catShowcase-subcategoryImgSize
+                                    lazyload=theme_settings.lazyload_mode
+                                    default_image="img/coming-soon.jpg"
+                                }}
                             </div>
                         </a>
                     </figure>
