@@ -31,7 +31,19 @@
         font-family: inherit;
         font-weight: inherit;
         font-size: $productInfoBlock-heading-fontSize;
-        margin: 0 0 spacing("base") 0;
+        margin: 0 0 spacing("base") spacing("double");
+    }
+
+    .icon {
+        position: absolute;
+        top: spacing("single");
+        left: spacing("single");
+
+        svg {
+            width: 30px;
+            height: 30px;
+            fill: $productInfoBlock-iconColor;
+        }
     }
 
     @include breakpoint("large") {
