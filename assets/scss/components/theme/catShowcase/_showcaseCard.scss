@@ -1,0 +1,110 @@
+.showcaseProductListing {
+    .product {
+        overflow: visible;
+    }
+}
+
+.showcaseCard {
+    width: 100%;
+    margin-left: 0;
+    position: relative;
+    transition: width 0.25s, background-color 0.25s, margin-left 0.25s, border 0.25s, padding 0.25s, z-index 0.25s;
+    border-radius: 10px;
+    font-family: $catShowcase-font;
+    font-weight: $catShowcase-fontWeight;
+    font-size: fontSize("smaller");
+
+    .card-figure {
+        background-color: transparent;
+    }
+
+    .card-title {
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: fontSize("large");
+    }
+
+    .productView-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .productView-info-name {
+        width: 50%;
+        margin: 0;
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+    }
+
+    .productView-info-value {
+        width: 50%;
+    }
+}
+
+.showcaseCard-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s;
+
+    p {
+        margin: spacing("single") 0;
+    }
+
+    .showcaseCard--active & {
+        max-height: 400px;
+    }
+}
+
+.showcaseCard-actions {
+    text-align: center;
+}
+
+.showcaseCard-controls {
+    position: absolute;
+    top: spacing("base");
+    right: spacing("base");
+
+    svg {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        transition: transform 0.25s;
+        fill: $catShowcase-iconInactiveColor;
+
+        &:hover {
+            fill: $catShowcase-iconActiveColor;
+        }
+    }
+}
+
+.showcaseCard-control-enlarge {
+    &:hover svg {
+        transform: scale(1.1);
+    }
+
+    .showcaseCard--active & {
+        display: none;
+    }
+}
+
+.showcaseCard-control-shrink {
+    display: none;
+
+    &:hover svg {
+        transform: scale(0.8);
+    }
+
+    .showcaseCard--active & {
+        display: block;
+    }
+}
+
+.showcaseCard--active {
+    background-color: $catShowcase-backgroundColor;
+    width: 120%;
+    margin-left: -10%;
+    z-index: 1000;
+    border: 1px solid $catShowcase-borderColor;
+    padding: spacing("base");
+}

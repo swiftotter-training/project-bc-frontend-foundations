@@ -1,0 +1,28 @@
+.showcaseSubcategoryListing {
+    margin: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    column-gap: spacing("base");
+    row-gap: spacing("base");
+    font-family: $catShowcase-font;
+    font-weight: $catShowcase-fontWeight;
+
+    @include breakpoint("medium") {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    h3 {
+        font-family: inherit;
+        font-weight: inherit;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+}
