@@ -1,9 +1,12 @@
 export default class ShowcaseCards {
-    constructor() {
-        this.activeClass = 'showcaseCard--active';
-        this.hoverDelay = 250;
+    constructor(context) {
+        this.context = context;
 
-        this.enableHover = true;
+        this.activeClass = 'showcaseCard--active';
+        this.hoverAllowed = this.context.showcaseAllowProductHover ?? true;
+        this.hoverDelay = this.context.showcaseProductHoverDelay ?? 250;
+
+        this.enableHover = this.hoverAllowed;
         this.activeCard = null;
         this.hoverActivateTimeout = null;
         this.unhoverDeactivateTimeout = null;
@@ -54,11 +57,15 @@ export default class ShowcaseCards {
     handleExplicitActivate(el) {
         const card = el.closest('.showcaseCard');
         this.activate(card);
-        this.enableHover = true;
+        if (this.hoverAllowed) {
+            this.enableHover = true;
+        }
     }
 
     handleExplicitDeactivate() {
-        this.enableHover = false;
+        if (this.hoverAllowed) {
+            this.enableHover = false;
+        }
         this.deactivate();
     }
 

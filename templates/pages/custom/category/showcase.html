@@ -5,6 +5,9 @@ category:
         limit: 4
 ---
 
+{{~inject "showcaseAllowProductHover" theme_settings.catShowcase-allowProductHover}}
+{{~inject "showcaseProductHoverDelay" theme_settings.catShowcase-productHoverDelay}}
+
 {{#partial "section-logo"}}
     {{#if category.image}}
     <img src="{{getImage category.image 'section_logo_size'}}" alt="{{category.image.alt}}" />

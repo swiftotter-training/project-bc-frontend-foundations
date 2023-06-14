@@ -435,7 +435,14 @@
       "settings": {
         "productInfoBlock-backgroundColor": "#A4A4F3",
         "productInfoBlock-borderColor": "#7777B5",
-        "productInfoBlock-heading-fontSize": 24
+        "productInfoBlock-heading-fontSize": 24,
+        "productInfoBox-font": "Google_Righteous_400",
+        "catShowcase-font": "Google_Righteous_400",
+        "catShowcase-productHoverDelay": 10,
+        "catShowcase-backgroundColor": "#A4A4F3",
+        "catShowcase-borderColor": "#7777B5",
+        "catShowcase-iconInactiveColor": "#7777B5",
+        "catShowcase-iconActiveColor": "#7737B5"
       }
     }
   ]
