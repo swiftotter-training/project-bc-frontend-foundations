@@ -1,6 +1,6 @@
 {
-  "name": "SwiftOtter Front-end Foundations Theme 1.0.0",
-  "version": "1.0.0",
+  "name": "SwiftOtter Front-end Foundations Theme 1.1.0",
+  "version": "1.1.0",
   "template_engine": "handlebars_v4",
   "meta": {
     "price": 0,
@@ -326,6 +326,7 @@
     "paymentbuttons-paypal-shape": "rect",
     "paymentbuttons-paypal-label": "checkout",
     "paymentbanners-homepage-color": "white",
+    "paymentbuttons-bolt-shape": "rect",
     "paymentbanners-homepage-ratio": "8x1",
     "paymentbanners-cartpage-text-color": "black",
     "paymentbanners-cartpage-logo-position": "left",
