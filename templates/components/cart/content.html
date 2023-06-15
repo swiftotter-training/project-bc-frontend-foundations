@@ -53,6 +53,7 @@
                             {{/each}}
                         </dl>
 
+                        {{#if can_modify}}
                         <a href="#"
                            data-item-edit="{{id}}"
                            data-product-id="{{product_id}}"
@@ -60,6 +61,7 @@
                         >
                             {{lang 'common.change'}}
                         </a>
+                    {{/if}}
                     {{/if}}
 
                     {{#if type '==' 'GiftCertificate'}}
